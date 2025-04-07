@@ -6,7 +6,23 @@
     <title>Snake Game</title>
 </head>
 <body>
-    
+
     <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        // Get the 2D rendering context
+            const ctx = canvas.getContext('2d');
+
+            // Draw a white rectangle covering the entire canvas (300x300)
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, 300, 300);
+
+            // Add a black border around the rectangle
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 1; // Border thickness
+            ctx.strokeRect(0, 0, 300, 300);
+
+
+    </script>
 </body>
 </html>
